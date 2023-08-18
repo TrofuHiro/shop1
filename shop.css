@@ -1,0 +1,213 @@
+body {
+    background-color: #1a1a1a;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    color: #55aaff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #66bbff;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+.box {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+  .button {
+    background-color: #55aaff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #66bbff;
+  }
+  .thum{
+    width: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+.fa-solid.fa-cart-shopping{
+    font-size: 24px;
+}
+.fa-solid.fa-cart-shopping:hover{
+    font-size: 36px;
+    color: white;
+}
+.header {
+    display: flex;
+    justify-content: space-between; /* ให้ส่วนหนึ่งอยู่ซ้ายและส่วนหนึ่งอยู่ขวา */
+    align-items: center; /* จัดให้เนื้อหาตรงกลางแนวตั้ง */
+    padding: 1rem;
+}
+
+.header h1 {
+    margin: 0; /* ลบระยะขอบข้างของ <h1> */
+}
+
+#showOverlayButton {
+    font-size: 2rem;
+}
+.overlay h2 {
+    font-size: 2rem;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+}
+.close1{
+    font-size: 36px;
+    margin-left: 40%;
+}
+.close2{
+    font-size: 36px;
+}
+@keyframes colorChange{
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+}
+
+/*สิ้นค้า*/
+h1{
+    font-size: 70px;
+    animation: colorChange 10s linear infinite;
+}
+.overlay {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    overflow:scroll;
+  }
+
+  .container_over {
+    background-color: #ffffff;
+    width: 60%;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  .thum_o {
+    width: 10%;
+  }
+
+  .box1 h2,
+  .box2 h2,
+  .box3 h2,
+  .box4 h2 {
+    color: #1a1a1a;
+    margin: 0;
+  }
+
+  .close {
+    margin-top: 10px;
+  }
+.box_{
+    background-color: #ffffff;
+    color: #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.box_{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.decreaseButton{
+    font-size: 30px;
+}
+.increaseButton{
+    font-size: 30px;
+}
+.quantity{
+    font-size: 30px;
+    color: #1a1a1a;
+}
+.fa-solid.fa-trash{
+    font-size: 30px;
+    color: black;
+    margin-left: 20px;
+}
+.fa-solid.fa-trash:hover{
+    font-size: 35px;
+    color: rgb(255, 0, 0);
+    margin-left: 20px;
+}
+.id{
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+}
+.text{
+    font-size: 30px;
+    color: black;
+}
+.totalLabel1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+.thum_p{
+    width: 40%;
+    margin: 20px;
+    margin-left: 30%;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <h1>MaoMao Shop</h1>
+        <i id="showOverlayButton" class="fa-solid fa-dolly fa-beat"></i>
+    </header>
+    
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="https://howto.termgame.com/static/media/garena.6bee80ad.png" alt="Slide 1" class="thum_p">
+        </div>
+        
+        <div class="mySlides">
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/37/87/valorant-game-logo-icon-eps-10-gaming-streamer-vector-33193787.jpg" alt="Slide 2" class="thum_p">
+        </div>
+        
+        <div class="mySlides">
+            <img src="https://ngtimes.ca/wp-content/uploads/2021/01/roblox-logo.png" alt="Slide 3" class="thum_p">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="box">
+            <img src="https://howto.termgame.com/static/media/garena.6bee80ad.png" alt="" class="thum">
+            <h2>บัตรเติมเงินการีน่า ราคา 300 บาท</h2>
+            <i class="fa-solid fa-cart-shopping" id="cartIcon1"></i>
+        </div>
+        <div class="box">
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/37/87/valorant-game-logo-icon-eps-10-gaming-streamer-vector-33193787.jpg" alt="" class="thum">
+            <h2>บัตรเติมเงินvalorant ราคา 500 บาท</h2>
+            <i class="fa-solid fa-cart-shopping" id="cartIcon2"></i>
+        </div>
+        <div class="box">
+            <img src="https://ngtimes.ca/wp-content/uploads/2021/01/roblox-logo.png" alt="" class="thum">
+            <h2>บัตรเติมเงินroblox ราคา 350 บาท</h2>
+            <i class="fa-solid fa-cart-shopping" id="cartIcon3"></i>
+        </div>
+        <div class="box">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAqFBMVEUAN5H////z8/Pl5ebr6+z6+voAJ4ytttIAFYbi6PLj4+QAD4UANJAAEYUAK40ALo4AMY/z9/sAJIsAIYoAHokAAIMAGocACoTJzd+PmsEADIXW2ufc4ezr8Pf19fOQm8FJYKMNOpGEkLphdK1sfLClrcw4UpvCx9l1hbZpe7AnRJU+WJ63vtN5h7WmsM7z8u0rSphUZqJfbKado8N/jrssT5w8VZ0YQJU804teAAAL7UlEQVR4nO2d63KqOhiGAQFRQ0BADiqgUqtWrG21y/u/sx2wVrQEEaIEZr9/HKaUyUOS75ATDMuyQqvV4tAvj37xl954MfeXkwNTraaT1axtuyzH87fLHF0yOQj5LWc7E8PUIFRBxYAMA1RF1GVz4oSkCFnb+TfUoFo12ZVUqFlrf+Tx/C1CAYlHNY5+UMXzl5ccO5ppBqy+4tIFoAk3tsdmIfAMouQRLddqdQX02724fJ+asGqMG1KMN7/F4xHYBGEruj5fbt3ZQKS19pICUNp0UhFaaYSnF8B3ljLt1XeWIi/7fxBOhFyaPMGRlaqLfZcUyxe8VJYrW9qNL7ehWJ/6O0mc2gmEbG/BB1LVxS0iIK/ipplG2L2oww6sVwM9C05H/LEOuwnCa0fitQd1MKDpAlabvXaN17Z0O6tlC/2V7NzyFoFedRlLynjxMITdOAIItKpLWFpa4CWJ2B9L04375bYBgAjx5Ux05S28Wd2b6FFG3BfTCNv1NjJnSW0+LXtiO4OqS0ZM1ohLyZ54atPA+wWYlOxpu6prJJMmuPrjLbywKZ3wKMn2rrInQay6TGQFpsJl9sQ79UuXsiX6l96iI1ddIuKy+snsabtskpk5Slkmsye3eVWI0oxxInuaNa0XRlI2/NlbNCeaSUr69Yfce8NcxY9gZE7j7ImdNideSwocvB9bOjKrLsuDZCz4I2Ej7UwkZGvi7IltQmKfLtGLsye7qY2UYcxRZEv5xjbSozVlWtt1My1pJPAaZ0/DqsvxQFkCyp7sZgywpUsLeYZtXGaYFHQQ4eRhqyxEXaw6KVMnHOMZj3o6nI/mK03SlCotmcky44d5Q7EdxbxuuP8YaJWNVMous3hYRHMkZI+Ljl6taigNm9k9zNAkCKOhksXsrff8fim2Gf9JhHGLba8k87lVqcyY5eNM6R/CSCP/eyg+b5GcumImD3ul6YRI/TCQ9CdZWDBhHrdeFEsY254Z85z2On3gszMJkcY+Mj21jvpvEUamZ/46pG7lan7lIIwgd+thXWcu8xHGkFOz6gC2kHITIo2WRg275D2EKOZ5Z4y69cj7CJHCtVQvxrsJUWNdS3VqqwUIUSRwqNGgSiFCln2vj10tSMgKX3UZoi5KyLJtsx69sTgh6zK1aKklCFl2UodJ21uE84McLLB/rcNS1xuEG9TZVHMtYBHpr8VswvFxdYRywN7xSf1gfDbh5seWiDPsLR+0x3DZhIeTQzCxt7i0+8VsQut0mxZi72k/bMaBjDIJO7/LWaGDv+txs0ZElJNQ/cLf5dK9WCsnIaNk3LahOrbJSzjMuI3uRZN5CXsZt7EBzT2RCKFNszklQsgyFCdSZAhpXkhBhpDmZkqGkOb1y4QIKY5rCBE+bhq+tAgRPm6xSGkRIuzQu+WMEOE5z6JOpAgP1Pp8UoSvjSekd3MrKUJ6c0RShPSutCdF+Li1hWVFipDefWekCNv/E1am/wlP+p+w+ZaG3gSRFOG+8TFN8+PS5ucW1BoaUoRur0KGbBEitBs/EkWvsyBF+EGtoSFE6FK8TZkM4ZzeRkqIkN6xREKEVJ9KQoRwTe/MExnCBc1VSISQ7h1RBAgDatOKWOUJfYrn8COVJpxTvCAq7j15CWXMLXtqrQyA8jr6zUsImLQbO6+05oWKOfXHbBRq5SVkgDZ8sa/+/ELpyfCKrm9GUQnvIoz/0Vy92278J3e0e6Xz2xOqZm1OVXEvIZIiGrIJIdRlnUovCMTeZ2LBdgFCqoVsy0f7YmtIswgVaep3rgAIEAKgIoHKG6xi6LPxX4DChKoCRV2SegYE359I31MRDiXJ0KBSxffCVM3c2KkARQhVqEnD9YvTXnSumoTbscP5/ouxDPGZRzKpovyJ3QxyJyFAFhQGO/u6sV9r3N6/ycZTzpkA0Jq0sdvO7iIEUBv8cxbuDbizRrvPgf5Yf4lM55ufXaK8hOhRYI/fhIjVYqkbD4NUTMVJsS2FCKW3+a2GiZW9HGgPaK5RWJZuW4oQmoXxjgoDmWz4o2qDVR683IRyvxwhy/Z3kFgKgmzLZ5ZtqYYQaUemQ6o6dO4pzhMJWXZVPgJU5TV+G2SK7I36TEI2LLljQbW+btrOZNkd9XiyBQlC196tvqbDXs86fDkh9vZSI+NA/rrD4rm7j97JvJUmtPdA/o1HQfRp1QBnCOzig1b62yg/X/hpJax3OcKxA80/QShkcLcXXbChSvlPflgEw0sPXILQ9adS6qyahHtewa2Y8CNvtDja6/p1gFGUsD9/xThydYB3x4Vm4ZRJPjz3ZFtIELbXFiZOUeRJhkX4LBDBgWkePPwbL0AYBrhzMVG4uM+0CG8F6tDMYWPCiYU9Z+1eQntjYUJpVbNuhYtCgel+8H0Lz16ZmCLBuwntPS4dAuIguG3viqxJUfaZjxzPTEyRFEP3wV2EroM7VhBA6eM9RzTcKbJiA+IPHUGv/FtKLxJqUEv7rri0v/vu4WyLOXVyhRv9QqNU0feScNr3Up+I8o+fADYnISuEE9zZl6gpZNuWxMMKDsPp2Cemf4UOooz95D/zESpBD2M6f5pCPhU+GkzDlvD9L6FiGE7ijeccxUjHA6I8yZ/L9Esc72Ziw8b9AP42DAAU0bweNy0+5g2g/K99R1blWyUGa9Q37HPd3efUkiVJlofgdfn+p78UJARpMwRZ2sFyi8LUQ+bL7LudPuaGQoSKqaTNEGDlzszSgzTAKDCWWYxQ1XEzBOkS2hOLyKI+6Sv/YHRxwmiG4K53aa/IDZaqVnBHDlyEEMDhv/k9Izb2Ric7qq+aZz9HnhBKh909eB1shFdGKFY5+HfVZE5CxYC3ZwgSyojwCECaymaR+2XnjGnyxy2Rws/BY9cwAEUfHvZhrgabj/DWXpKk7BUueyRMCTVJ/3LCEZ6z3wn9F8IjwqMZfPCM4aVUqJmy/h3s5+/2aDzqdFy3Mx6P7PZ8FqxFWdIgsRHhSK5/MCtZzg6iRQWabuimhIR+NVGEyTSGCKEw/0fvhwUIEC4+B0/8YsvdKktoL/+OwdKlUoRjH9J/cnlxQtd/k6jtfAmJWXl6BmE4wY160ybwusN7TRzhAjvqTaOidTe4sDOVcLQxKbctfwWgJM7SYva/hK4D6Lct6YJGyhqcK0L8/E5NpBi9IMQTZs3v1EeqNgze+ymE+Pmd+kkVrfW7myDssePZA1fgVSIE+e2PT4Tqoa62JVPIvE6dsRuPYtS/82GEIJ/I9sjvA9KgwwO/YUmFwIRZNcVSp0tdMrMmWrOzoM/Qe5IWEcEdQ/N52QSkLRi6vz5QWtKYYandbUtEhsdwFJ8IXl7qhGV4mo/mLy3oIMKwycZUt1mG4+g9L7u8hhzHUH5ASjmBf9sWQ/VhWmUFHT4ipPoYn3Iy7VaL4XmvuaZGZAWBabV4eo8EL6l4iWxEaDe1mcYr1RFhy6P5xLASOm42iLfZNNSaiu8cqr+IUOjSe4BmGVksfyJspq1BdiYmFJD4cROTRNkVOJ7nI0vDs+yyeZWovGy7wo8tRYR9ir+MVVC9TquVIGT9pgU2UUh6JOSOEqYN84lQ+CGLbWnk9UvspKVRUughsl9vgX45dtUkt68EWy5J2I0I2Qa1UwD51i8h8hgccokcz42aE9kMOkLsCyNnf7KlKILj201BlMIj0YW3iK5Zpxkj/NreSyPstlAE8ELvCe/5pQXbM9Exe0KWpnvsl1xQf0QtSBIlvUV87b3UvaHqwSXRNSHqi/U2N9J+e00YZ08nj4HsK9tO3+NbC4FB6PFXRAlbGvfLbosfTesa3SiwEyNcECW9RXR9DODkWlajFPA/CDzGHwq/L8Ce1i+ZgmK4TSCcCbk0eYJv1SvrV2RH8FJZrmxp9/eyv6TzLN9UQXnZ4f8gYLzF+bKzedheP6IC4mDmblMRrrKn3xdwuuRbPv3LIxVz+o5HuMie+GtHgn5Yz96I5lPOCy0iAA1tNmK5LAQhxVtcXPK8N/LXlkgdpQq14b9ZvEI+G+EW4c9l6ExMWRcrOcv3SkCFUDPNT8fmtnxWme8jRBXPunZ7tpocKgacTpb+bjH2bpf55/I/UtTq//mT6qEAAAAASUVORK5CYII=" alt="" class="thum">
+            <h2>บัตรเติมเงินlaystation ราคา 1000 บาท</h2>
+            <i class="fa-solid fa-cart-shopping" id="cartIcon4"></i>
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="container_over">
+            <div class="box1" style="display: none;">
+                <div class="box_">
+                    <img src="https://howto.termgame.com/static/media/garena.6bee80ad.png" alt="" class="thum_o">
+                    <h2>บัตรเติมเงินการีน่า ราคา 300 บาท</h2>
+                    <div class="buttons">
+                        <button class="decreaseButton">-</button>
+                        <span class="quantity" id="ch_1">0</span>
+                        <button class="increaseButton">+</button>
+                    </div>
+                    <i class="fa-solid fa-trash" onclick="DOMContentLoaded('.box1')" ></i>
+                </div>
+            </div>
+            <div class="box2" style="display: none;">
+                <div class="box_">
+                    <img src="https://cdn3.vectorstock.com/i/1000x1000/37/87/valorant-game-logo-icon-eps-10-gaming-streamer-vector-33193787.jpg" alt="" class="thum_o">
+                    <h2>บัตรเติมเงินvalorant ราคา 500 บาท</h2>
+                    <div class="buttons">
+                        <button class="decreaseButton">-</button>
+                        <span class="quantity" id="ch_2">0</span>
+                        <button class="increaseButton">+</button>
+                    </div>
+                    <i class="fa-solid fa-trash" onclick="DOMContentLoaded('.box2')"></i>
+                </div>
+            </div>
+            <div class="box3" style="display: none;">
+                <div class="box_">
+                    <img src="https://ngtimes.ca/wp-content/uploads/2021/01/roblox-logo.png" alt="" class="thum_o">
+                    <h2>บัตรเติมเงินroblox ราคา 350 บาท</h2>
+                    <div class="buttons">
+                        <button class="decreaseButton">-</button>
+                        <span class="quantity" id="ch_3">0</span>
+                        <button class="increaseButton">+</button>
+                    </div>
+                    <i class="fa-solid fa-trash" onclick="DOMContentLoaded('.box3')"></i>
+                </div> 
+            </div>
+            <div class="box4" style="display: none;">
+                <div class="box_">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAqFBMVEUAN5H////z8/Pl5ebr6+z6+voAJ4ytttIAFYbi6PLj4+QAD4UANJAAEYUAK40ALo4AMY/z9/sAJIsAIYoAHokAAIMAGocACoTJzd+PmsEADIXW2ufc4ezr8Pf19fOQm8FJYKMNOpGEkLphdK1sfLClrcw4UpvCx9l1hbZpe7AnRJU+WJ63vtN5h7WmsM7z8u0rSphUZqJfbKado8N/jrssT5w8VZ0YQJU804teAAAL7UlEQVR4nO2d63KqOhiGAQFRQ0BADiqgUqtWrG21y/u/sx2wVrQEEaIEZr9/HKaUyUOS75ATDMuyQqvV4tAvj37xl954MfeXkwNTraaT1axtuyzH87fLHF0yOQj5LWc7E8PUIFRBxYAMA1RF1GVz4oSkCFnb+TfUoFo12ZVUqFlrf+Tx/C1CAYlHNY5+UMXzl5ccO5ppBqy+4tIFoAk3tsdmIfAMouQRLddqdQX02724fJ+asGqMG1KMN7/F4xHYBGEruj5fbt3ZQKS19pICUNp0UhFaaYSnF8B3ljLt1XeWIi/7fxBOhFyaPMGRlaqLfZcUyxe8VJYrW9qNL7ehWJ/6O0mc2gmEbG/BB1LVxS0iIK/ipplG2L2oww6sVwM9C05H/LEOuwnCa0fitQd1MKDpAlabvXaN17Z0O6tlC/2V7NzyFoFedRlLynjxMITdOAIItKpLWFpa4CWJ2B9L04375bYBgAjx5Ux05S28Wd2b6FFG3BfTCNv1NjJnSW0+LXtiO4OqS0ZM1ohLyZ54atPA+wWYlOxpu6prJJMmuPrjLbywKZ3wKMn2rrInQay6TGQFpsJl9sQ79UuXsiX6l96iI1ddIuKy+snsabtskpk5Slkmsye3eVWI0oxxInuaNa0XRlI2/NlbNCeaSUr69Yfce8NcxY9gZE7j7ImdNideSwocvB9bOjKrLsuDZCz4I2Ej7UwkZGvi7IltQmKfLtGLsye7qY2UYcxRZEv5xjbSozVlWtt1My1pJPAaZ0/DqsvxQFkCyp7sZgywpUsLeYZtXGaYFHQQ4eRhqyxEXaw6KVMnHOMZj3o6nI/mK03SlCotmcky44d5Q7EdxbxuuP8YaJWNVMous3hYRHMkZI+Ljl6taigNm9k9zNAkCKOhksXsrff8fim2Gf9JhHGLba8k87lVqcyY5eNM6R/CSCP/eyg+b5GcumImD3ul6YRI/TCQ9CdZWDBhHrdeFEsY254Z85z2On3gszMJkcY+Mj21jvpvEUamZ/46pG7lan7lIIwgd+thXWcu8xHGkFOz6gC2kHITIo2WRg275D2EKOZ5Z4y69cj7CJHCtVQvxrsJUWNdS3VqqwUIUSRwqNGgSiFCln2vj10tSMgKX3UZoi5KyLJtsx69sTgh6zK1aKklCFl2UodJ21uE84McLLB/rcNS1xuEG9TZVHMtYBHpr8VswvFxdYRywN7xSf1gfDbh5seWiDPsLR+0x3DZhIeTQzCxt7i0+8VsQut0mxZi72k/bMaBjDIJO7/LWaGDv+txs0ZElJNQ/cLf5dK9WCsnIaNk3LahOrbJSzjMuI3uRZN5CXsZt7EBzT2RCKFNszklQsgyFCdSZAhpXkhBhpDmZkqGkOb1y4QIKY5rCBE+bhq+tAgRPm6xSGkRIuzQu+WMEOE5z6JOpAgP1Pp8UoSvjSekd3MrKUJ6c0RShPSutCdF+Li1hWVFipDefWekCNv/E1am/wlP+p+w+ZaG3gSRFOG+8TFN8+PS5ucW1BoaUoRur0KGbBEitBs/EkWvsyBF+EGtoSFE6FK8TZkM4ZzeRkqIkN6xREKEVJ9KQoRwTe/MExnCBc1VSISQ7h1RBAgDatOKWOUJfYrn8COVJpxTvCAq7j15CWXMLXtqrQyA8jr6zUsImLQbO6+05oWKOfXHbBRq5SVkgDZ8sa/+/ELpyfCKrm9GUQnvIoz/0Vy92278J3e0e6Xz2xOqZm1OVXEvIZIiGrIJIdRlnUovCMTeZ2LBdgFCqoVsy0f7YmtIswgVaep3rgAIEAKgIoHKG6xi6LPxX4DChKoCRV2SegYE359I31MRDiXJ0KBSxffCVM3c2KkARQhVqEnD9YvTXnSumoTbscP5/ouxDPGZRzKpovyJ3QxyJyFAFhQGO/u6sV9r3N6/ycZTzpkA0Jq0sdvO7iIEUBv8cxbuDbizRrvPgf5Yf4lM55ufXaK8hOhRYI/fhIjVYqkbD4NUTMVJsS2FCKW3+a2GiZW9HGgPaK5RWJZuW4oQmoXxjgoDmWz4o2qDVR683IRyvxwhy/Z3kFgKgmzLZ5ZtqYYQaUemQ6o6dO4pzhMJWXZVPgJU5TV+G2SK7I36TEI2LLljQbW+btrOZNkd9XiyBQlC196tvqbDXs86fDkh9vZSI+NA/rrD4rm7j97JvJUmtPdA/o1HQfRp1QBnCOzig1b62yg/X/hpJax3OcKxA80/QShkcLcXXbChSvlPflgEw0sPXILQ9adS6qyahHtewa2Y8CNvtDja6/p1gFGUsD9/xThydYB3x4Vm4ZRJPjz3ZFtIELbXFiZOUeRJhkX4LBDBgWkePPwbL0AYBrhzMVG4uM+0CG8F6tDMYWPCiYU9Z+1eQntjYUJpVbNuhYtCgel+8H0Lz16ZmCLBuwntPS4dAuIguG3viqxJUfaZjxzPTEyRFEP3wV2EroM7VhBA6eM9RzTcKbJiA+IPHUGv/FtKLxJqUEv7rri0v/vu4WyLOXVyhRv9QqNU0feScNr3Up+I8o+fADYnISuEE9zZl6gpZNuWxMMKDsPp2Cemf4UOooz95D/zESpBD2M6f5pCPhU+GkzDlvD9L6FiGE7ijeccxUjHA6I8yZ/L9Esc72Ziw8b9AP42DAAU0bweNy0+5g2g/K99R1blWyUGa9Q37HPd3efUkiVJlofgdfn+p78UJARpMwRZ2sFyi8LUQ+bL7LudPuaGQoSKqaTNEGDlzszSgzTAKDCWWYxQ1XEzBOkS2hOLyKI+6Sv/YHRxwmiG4K53aa/IDZaqVnBHDlyEEMDhv/k9Izb2Ric7qq+aZz9HnhBKh909eB1shFdGKFY5+HfVZE5CxYC3ZwgSyojwCECaymaR+2XnjGnyxy2Rws/BY9cwAEUfHvZhrgabj/DWXpKk7BUueyRMCTVJ/3LCEZ6z3wn9F8IjwqMZfPCM4aVUqJmy/h3s5+/2aDzqdFy3Mx6P7PZ8FqxFWdIgsRHhSK5/MCtZzg6iRQWabuimhIR+NVGEyTSGCKEw/0fvhwUIEC4+B0/8YsvdKktoL/+OwdKlUoRjH9J/cnlxQtd/k6jtfAmJWXl6BmE4wY160ybwusN7TRzhAjvqTaOidTe4sDOVcLQxKbctfwWgJM7SYva/hK4D6Lct6YJGyhqcK0L8/E5NpBi9IMQTZs3v1EeqNgze+ymE+Pmd+kkVrfW7myDssePZA1fgVSIE+e2PT4Tqoa62JVPIvE6dsRuPYtS/82GEIJ/I9sjvA9KgwwO/YUmFwIRZNcVSp0tdMrMmWrOzoM/Qe5IWEcEdQ/N52QSkLRi6vz5QWtKYYandbUtEhsdwFJ8IXl7qhGV4mo/mLy3oIMKwycZUt1mG4+g9L7u8hhzHUH5ASjmBf9sWQ/VhWmUFHT4ipPoYn3Iy7VaL4XmvuaZGZAWBabV4eo8EL6l4iWxEaDe1mcYr1RFhy6P5xLASOm42iLfZNNSaiu8cqr+IUOjSe4BmGVksfyJspq1BdiYmFJD4cROTRNkVOJ7nI0vDs+yyeZWovGy7wo8tRYR9ir+MVVC9TquVIGT9pgU2UUh6JOSOEqYN84lQ+CGLbWnk9UvspKVRUughsl9vgX45dtUkt68EWy5J2I0I2Qa1UwD51i8h8hgccokcz42aE9kMOkLsCyNnf7KlKILj201BlMIj0YW3iK5Zpxkj/NreSyPstlAE8ELvCe/5pQXbM9Exe0KWpnvsl1xQf0QtSBIlvUV87b3UvaHqwSXRNSHqi/U2N9J+e00YZ08nj4HsK9tO3+NbC4FB6PFXRAlbGvfLbosfTesa3SiwEyNcECW9RXR9DODkWlajFPA/CDzGHwq/L8Ce1i+ZgmK4TSCcCbk0eYJv1SvrV2RH8FJZrmxp9/eyv6TzLN9UQXnZ4f8gYLzF+bKzedheP6IC4mDmblMRrrKn3xdwuuRbPv3LIxVz+o5HuMie+GtHgn5Yz96I5lPOCy0iAA1tNmK5LAQhxVtcXPK8N/LXlkgdpQq14b9ZvEI+G+EW4c9l6ExMWRcrOcv3SkCFUDPNT8fmtnxWme8jRBXPunZ7tpocKgacTpb+bjH2bpf55/I/UtTq//mT6qEAAAAASUVORK5CYII=" alt="" class="thum_o">
+                    <h2>บัตรเติมเงินlaystation ราคา 1000 บาท</h2>
+                    <div class="buttons">
+                        <button class="decreaseButton">-</button>
+                        <span class="quantity" id="ch_4">0</span>
+                        <button class="increaseButton">+</button>
+                    </div>
+                    <i class="fa-solid fa-trash"onclick="DOMContentLoaded('.box4')"></i>
+                </div>
+            </div>
+        </div>
+        <div class="id">
+            <label class="text">ชื่อ</label><br>
+            <input type="text" pattern="[A-Za-zก-ฮ]+"  required style="font-size: 24px;"><br>
+            <label class="text">ที่อยู่</label><br>
+            <input type="text" required style="font-size: 24px;"><br>
+            <label class="text">เบอร์</label><br>
+            <input type="text" pattern="[0-9]"  maxlength="10" required style="font-size: 24px;"><br>
+            <label id="totalLabel" style="font-size: 30px; color: black;"></label>
+            <label id="totalLabel1" class="totalLabel1"></label>
+        </div>
+        <button id="closeOverlayButton" class="close1">เลือกของต่อ</button>
+        <button type="submit" class="close2" onclick="sub_()">จ่ายเงิน</button>
+    </div>
+    <footer class="footer">
+        <p>&copy;ทำเพื่อการศึกษา</p>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+</html>
